@@ -1,3 +1,21 @@
-main-header {
-    background-color: 'blue';
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    & > * {
+        margin-left: 10px;
+        padding: 10px;
+        cursor: pointer;
+    }
 }

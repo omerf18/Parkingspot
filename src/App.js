@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import AppHeader from './cmps/header/app-header';
 
 function App() {
