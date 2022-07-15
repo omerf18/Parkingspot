@@ -1,0 +1,21 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.homepage-actions {
+    font-weight: 600;
+}
+
+.signup-btn {
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+        color: #83b3db;
+    }
+}

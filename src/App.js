@@ -1,10 +1,12 @@
 import './App.scss';
 import AppHeader from './cmps/header/app-header';
+import Homepage from './pages/homepage/homepage';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <AppHeader className="app-header"/>
+      <AppHeader className="app-header" />
+      <Homepage/>
     </div>
   );
 }

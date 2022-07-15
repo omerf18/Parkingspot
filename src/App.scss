@@ -1,5 +1,13 @@
+// color palette:
+// blue: #0063B3
+// white: #e6e7e8
+// red: #e9502a
+// black: #2e2f30
+// light blue: #83b3db
+
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 html {
@@ -8,5 +16,6 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 10px;
+    background-color: #e6e7e8;
 }
