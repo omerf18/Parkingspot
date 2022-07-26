@@ -1,15 +1,13 @@
 import React from 'react';
 import './homepage.scss';
-import LoginForm from '../../cmps/login-form/login-form';
+import Map from '../../cmps/map/map';
 
 const Homepage = () => {
-    return ( 
-        <section className='homepage'>
-           <h1 className="title">Parkingspot</h1>
-           <LoginForm/>
-           <p className='homepage-actions'>Login or <span className='signup-btn'>Signup now!</span></p>
-        </section>
-     );
+   return (
+      <section className='homepage'>
+         <Map></Map>
+      </section>
+   );
 }
- 
+
 export default Homepage;
