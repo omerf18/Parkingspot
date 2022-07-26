@@ -1,3 +1,4 @@
+import React from 'react';
 import './homepage.scss';
 import LoginForm from '../../cmps/login-form/login-form';
 

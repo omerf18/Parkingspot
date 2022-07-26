@@ -10,7 +10,7 @@
         background-color: transparent;
         color: #0063b3;
         font-weight: 600;
-        font-family: 'Nunito', sans-serif;
+        font-family: "Nunito", sans-serif;
         &:focus {
             outline: none;
             border-color: #0063b3;
@@ -31,6 +31,7 @@ label {
 .form-btn {
     &:disabled {
         background-color: #83b3db;
+        cursor: default;
     }
     padding: 6px 12px;
     background-color: #0063b3;

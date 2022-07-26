@@ -1,3 +1,4 @@
+import React from 'react';
 import './login-form.scss';
 import useInput from "../../hooks/use-input";
 
@@ -31,9 +32,6 @@ const LoginForm = (props) => {
     const formSubmissionHandler = (event) => {
         event.preventDefault();
         if (!formIsValid) return;
-        console.log('Form submitted!');
-        console.log('email:', enteredEmail);
-        console.log('password:', enteredPassword);
         resetPasswordInput();
         resetEmailInput();
     }
