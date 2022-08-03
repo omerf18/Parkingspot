@@ -1,0 +1,14 @@
+@import "../../../assets/scss/setup/variables";
+
+.locate-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1;
+    padding: 4px;
+    border-radius: 6%;
+    color: $blue;
+    font-weight: 700;
+    border: 2px solid $blue;
+    cursor: pointer;
+}

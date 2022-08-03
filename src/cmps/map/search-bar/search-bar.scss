@@ -1,0 +1,28 @@
+@import "../../../assets/scss/setup/variables";
+
+.search-container {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    width: 100%;
+    max-width: 400px;
+    z-index: 1;
+    transform: translate(-50%);
+}
+
+.search-container input {
+    border: 2.5px solid $blue;
+    border-radius: 6%;
+    color: $blue;
+    padding: 8px;
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    &::placeholder {
+        color: $blue;
+        opacity: 1;
+        font-weight: 600;
+        font-family: "Nunito", sans-serif;
+    }
+}
