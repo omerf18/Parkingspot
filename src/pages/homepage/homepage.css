@@ -1,0 +1,31 @@
+.homepage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.homepage-actions {
+  font-weight: 600;
+}
+
+.signup-btn {
+  text-decoration: underline;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  color: #83b3db;
+}
+/*# sourceMappingURL=homepage.css.map */

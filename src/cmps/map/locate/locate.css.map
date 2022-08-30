@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,WAAW,CAAC;EACR,QAAQ,EAAE,QAAQ;EAClB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,CAAC;EACV,OAAO,EAAE,GAAG;EACZ,aAAa,EAAE,EAAE;EACjB,KAAK,ECRF,OAAO;EDSV,WAAW,EAAE,GAAG;EAChB,MAAM,EAAE,GAAG,CAAC,KAAK,CCVd,OAAO;EDWV,MAAM,EAAE,OAAO;CAClB",
+    "sources": [
+        "locate.scss",
+        "../../../assets/scss/setup/_variables.scss"
+    ],
+    "names": [],
+    "file": "locate.css"
+}

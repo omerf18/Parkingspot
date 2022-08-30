@@ -1,0 +1,58 @@
+.form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.form-input > input {
+  padding: 6px 4px;
+  border-radius: 8px;
+  border: 2px solid #83b3db;
+  background-color: transparent;
+  color: #0063b3;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+
+.form-input > input:focus {
+  outline: none;
+  border-color: #0063b3;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.form-actions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-btn {
+  padding: 6px 12px;
+  background-color: #0063b3;
+  color: #e6e7e8;
+  border: 2px solid #0063b3;
+  border-radius: 10%;
+  font-weight: 800;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+
+.form-btn:disabled {
+  background-color: #83b3db;
+  cursor: default;
+}
+
+.error-text {
+  color: #e9502a;
+  padding-top: 5px;
+}
+/*# sourceMappingURL=login-form.css.map */

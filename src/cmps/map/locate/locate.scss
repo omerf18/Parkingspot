@@ -5,10 +5,12 @@
     bottom: 1rem;
     right: 1rem;
     z-index: 1;
-    padding: 4px;
-    border-radius: 6%;
-    color: $blue;
-    font-weight: 700;
+    font-weight: 700x;
     border: 2px solid $blue;
     cursor: pointer;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: $blue;
+    color: white;
+    font-weight: 600;
 }

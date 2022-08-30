@@ -1,0 +1,12 @@
+.map-container {
+  width: 100%;
+}
+
+.app-header {
+  position: absolute;
+  top: 0.5rem;
+  padding-left: 10px;
+  z-index: 1;
+  width: 100%;
+}
+/*# sourceMappingURL=map.css.map */

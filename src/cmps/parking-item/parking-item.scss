@@ -1,0 +1,14 @@
+@import "../../assets/scss/basics/helpers";
+@import "../../assets/scss/setup/variables";
+
+.parking-item {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid $blue;
+    margin: 0 10px 10px 0;
+}
+
+.star-icon {
+    color: transparent;
+    text-shadow: 0 0 0 blue;
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { GoogleMap, useLoadScript, Marker, InfoWindow } from '@react-google-maps/api';
 import { formatRelative } from 'date-fns';
 import AppHeader from '../header/app-header';
@@ -7,7 +7,7 @@ import SearchBar from './search-bar/search-bar';
 import Locate from './locate/locate';
 import './map.scss';
 
-const libaries = ["places"];
+const libaries = ['places'];
 
 const containerStyle = {
     width: '100%',
@@ -24,26 +24,13 @@ const options = {
     disableDefaultUI: true
 }
 
-const Map = () => {
+const Map = ({ parkings }) => {
     const { isLoaded, loadError } = useLoadScript({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
-        libaries
+        libaries: ['places']
     });
 
-    const [parkings, setParkings] = React.useState([]);
-
     const [selectedParking, setSelectedParking] = React.useState(null);
-
-    const onMapClick = React.useCallback((event) => {
-        setParkings((currentParkings) => [
-            ...currentParkings,
-            {
-                lat: event.latLng.lat(),
-                lng: event.latLng.lng(),
-                time: new Date()
-            }
-        ]);
-    }, []);
 
     const mapRef = React.useRef();
 
@@ -53,7 +40,7 @@ const Map = () => {
 
     const panTo = React.useCallback(({ lat, lng }) => {
         mapRef.current.panTo({ lat, lng });
-        mapRef.current.setZoom(18);
+        mapRef.current.setZoom(22);
     }, []);
 
     if (loadError) return 'Error - Loading map failed';
@@ -71,34 +58,38 @@ const Map = () => {
                 center={center}
                 zoom={13}
                 options={options}
-                onClick={onMapClick}
                 onLoad={onMapLoad}
+                onClick={() => {
+                    setSelectedParking(null);
+                }}
+                id="google-map"
             >
                 {
                     parkings.map((parking) => (
                         <Marker
-                            key={parking.time.toISOString()}
-                            position={{ lat: parking.lat, lng: parking.lng }}
+                            key={parking.id}
+                            position={{ lat: parking.location.latitude, lng: parking.location.longitude }}
                             onClick={() => {
                                 setSelectedParking(parking);
                             }}
                         />
                     ))
                 }
-                {selectedParking ? (
+                {selectedParking &&
                     <InfoWindow
-                        position={{ lat: selectedParking.lat, lng: selectedParking.lng }}
+                        position={{ lat: selectedParking.location.latitude, lng: selectedParking.location.longitude }}
                         onCloseClick={() => { setSelectedParking(null) }}
                     >
                         <div>
-                            <h1>Hi</h1>
-                            <p>Parking at: {formatRelative(selectedParking.time, new Date())}</p>
+                            <h4>{selectedParking.address}</h4>
+                            <p>{selectedParking.isAvailable ? 'Available' : 'Not available'}</p>
+                            <p>Price: <span>&#8362;</span> {selectedParking.price}</p>
+                            <p>{'Rank: ' + selectedParking.rank + ' stars'}</p>
                         </div>
-                    </InfoWindow>) : null}
+                    </InfoWindow>}
             </GoogleMap>
-        </div >
-    );
+        </div>
+    )
 }
 
-// export default React.memo(Map)
 export default Map;

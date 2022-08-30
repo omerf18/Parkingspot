@@ -1,0 +1,76 @@
+{
+    "parkings": [
+        {
+            "id": "P01",
+            "isAvailable": true,
+            "parkingImg": "../img.png",
+            "rank": 5,
+            "address": "J. L. Gordon 31, Tel Aviv-Yafo, Israel",
+            "price": 10,
+            "location": {
+                "latitude": 32.082092,
+                "longitude": 34.772965
+            }
+        },
+        {
+            "id": "P02",
+            "isAvailable": true,
+            "parkingImg": "../img.png",
+            "rank": 3,
+            "address": "Ben Yehuda 72, Tel Aviv-Yafo, Israel",
+            "price": 12,
+            "location": {
+                "latitude": 32.0800593,
+                "longitude": 34.7699872
+            }
+        },
+        {
+            "id": "P03",
+            "isAvailable": true,
+            "parkingImg": "../img.png",
+            "rank": 3,
+            "address": "Frishman 43, Tel Aviv-Yafo, Israel",
+            "price": 10,
+            "location": {
+                "latitude": 32.0798913,
+                "longitude": 34.7744058
+            }
+        },
+        {
+            "id": "P04",
+            "isAvailable": true,
+            "parkingImg": "../img.png",
+            "rank": 2,
+            "address": "Rothschild Boulevard 22, Tel Aviv-Yafo, Israel",
+            "price": 14,
+            "location": {
+                "latitude": 32.0627781,
+                "longitude": 34.771653
+            }
+        },
+        {
+            "id": "P05",
+            "isAvailable": false,
+            "parkingImg": "../img.png",
+            "rank": 4,
+            "address": "King George Street 80, Tel Aviv-Yafo, Israel",
+            "price": 12,
+            "location": {
+                "latitude": 32.07680892944336,
+                "longitude": 34.77729415893555
+            }
+        },
+        {
+            "id": "P06",
+            "isAvailable": false,
+            "parkingImg": "../img.png",
+            "rank": 1,
+            "address": "Allenby 17, Tel Aviv-Yafo, Israel",
+            "price": 15,
+            "location": {
+                "latitude": 32.073204,
+                "longitude": 34.767429
+            }
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+.search-container {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  width: 100%;
+  max-width: 400px;
+  z-index: 1;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.search-container input {
+  border: 2.5px solid #0063b3;
+  border-radius: 6%;
+  color: #0063b3;
+  padding: 8px;
+  font-size: 1.5rem;
+  width: 100%;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+
+.search-container input::-webkit-input-placeholder {
+  color: #0063b3;
+  opacity: 1;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+
+.search-container input:-ms-input-placeholder {
+  color: #0063b3;
+  opacity: 1;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+
+.search-container input::-ms-input-placeholder {
+  color: #0063b3;
+  opacity: 1;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+
+.search-container input::placeholder {
+  color: #0063b3;
+  opacity: 1;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+}
+/*# sourceMappingURL=search-bar.css.map */

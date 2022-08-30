@@ -1,0 +1,116 @@
+{
+    "users": [
+        {
+            "id": "U01",
+            "name": "David",
+            "email": "user1@email.com",
+            "password": "123456",
+            "favoriteParkings": [],
+            "parkings": []
+        },
+        {
+            "id": "U02",
+            "name": "Omer",
+            "email": "omer@email.com",
+            "password": "123456",
+            "favoriteParkings": [
+                "P01",
+                "P02"
+            ],
+            "parkings": [
+                "P01"
+            ]
+        },
+        {
+            "id": "U03",
+            "name": "Dor",
+            "email": "dor@email.com",
+            "password": "123456",
+            "favoriteParkings": [
+                "P05",
+                "P06"
+            ],
+            "parkings": [
+                "P02",
+                "P04"
+            ]
+        },
+        {
+            "id": "U04",
+            "name": "Daniela",
+            "email": "daniela@email.com",
+            "password": "123456",
+            "favoriteParkings": [
+                "P03",
+                "P04"
+            ],
+            "parkings": [
+                "P03"
+            ]
+        },
+        {
+            "id": "U05",
+            "name": "Romi",
+            "email": "romi@email.com",
+            "password": "123456",
+            "favoriteParkings": [
+                "P01",
+                "P04"
+            ],
+            "parkings": []
+        },
+        {
+            "id": "U06",
+            "name": "John",
+            "email": "john@email.com",
+            "password": "123456",
+            "favoriteParkings": [
+                "P01"
+            ],
+            "parkings": []
+        },
+        {
+            "id": "U07",
+            "name": "Steve",
+            "email": "steve@email.com",
+            "password": "123456",
+            "favoriteParkings": [
+                "p06",
+                "P02"
+            ],
+            "parkings": []
+        },
+        {
+            "id": "U08",
+            "name": "Maria",
+            "email": "maria@email.com",
+            "password": "123456",
+            "favoriteParkings": [
+                "P03"
+            ],
+            "parkings": [
+                "P05"
+            ]
+        },
+        {
+            "id": "U09",
+            "name": "Sam",
+            "email": "sam@email.com",
+            "password": "123456",
+            "favoriteParkings": [
+                "P05"
+            ],
+            "parkings": []
+        },
+        {
+            "id": "U10",
+            "name": "Yulia",
+            "email": "yulia@email.com",
+            "password": "123456",
+            "favoriteParkings": [],
+            "parkings": [
+                "P06"
+            ]
+        }
+    ]
+}
